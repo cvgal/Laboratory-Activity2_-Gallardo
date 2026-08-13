@@ -55,4 +55,3 @@ public class Book {
         book2.display();
         book3.display();
     }
-}
