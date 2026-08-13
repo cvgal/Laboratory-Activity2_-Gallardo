@@ -40,4 +40,3 @@ public class Employee {
         employee4.display();
         employee5.display();
     }
-}
