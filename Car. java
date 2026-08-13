@@ -1,0 +1,41 @@
+public class Car {
+
+    // Instance variables
+    private String plateNumber;
+    private String brand;
+    private String model;
+    private int yearModel;
+
+    // Parameterized constructor
+    public Car(String plateNumber, String brand, String model, int yearModel) {
+        this.plateNumber = plateNumber;
+        this.brand = brand;
+        this.model = model;
+        this.yearModel = yearModel;
+    }
+
+    // Display method
+    public void display() {
+        System.out.println("Plate Number: " + plateNumber);
+        System.out.println("Brand: " + brand);
+        System.out.println("Model: " + model);
+        System.out.println("Year Model: " + yearModel);
+        System.out.println("----------------------------");
+    }
+
+    // Main method
+    public static void main(String[] args) {
+
+        // Create 4 sports car objects
+        Car car1 = new Car("SPT-1001", "Ferrari", "488 GTB", 2020);
+        Car car2 = new Car("SPT-1002", "Lamborghini", "Huracan", 2021);
+        Car car3 = new Car("SPT-1003", "Porsche", "911 Carrera", 2022);
+        Car car4 = new Car("SPT-1004", "McLaren", "720S", 2023);
+
+        // Call display method for each object
+        car1.display();
+        car2.display();
+        car3.display();
+        car4.display();
+    }
+}
