@@ -1,0 +1,43 @@
+public class Employee {
+
+    // Instance variables
+    private String employeeID;
+    private String employeeName;
+    private String department;
+    private double salary;
+
+    // Parameterized constructor
+    public Employee(String employeeID, String employeeName, String department, double salary) {
+        this.employeeID = employeeID;
+        this.employeeName = employeeName;
+        this.department = department;
+        this.salary = salary;
+    }
+
+    // Display method
+    public void display() {
+        System.out.println("Employee ID: " + employeeID);
+        System.out.println("Employee Name: " + employeeName);
+        System.out.println("Department: " + department);
+        System.out.println("Salary: $" + salary);
+        System.out.println("----------------------------");
+    }
+
+    // Main method
+    public static void main(String[] args) {
+
+        // Create 5 Employee objects with different values
+        Employee employee1 = new Employee("E001", "John Cruz", "IT", 35000.00);
+        Employee employee2 = new Employee("E002", "Maria Santos", "Human Resources", 32000.00);
+        Employee employee3 = new Employee("E003", "Carlos Reyes", "Finance", 38000.00);
+        Employee employee4 = new Employee("E004", "Anna Garcia", "Marketing", 30000.00);
+        Employee employee5 = new Employee("E005", "Mark Dela Cruz", "Sales", 33000.00);
+
+        // Call display method for each object
+        employee1.display();
+        employee2.display();
+        employee3.display();
+        employee4.display();
+        employee5.display();
+    }
+}
