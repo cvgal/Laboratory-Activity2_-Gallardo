@@ -1,40 +1,44 @@
-public class Patient {
+public class Product {
 
     // Instance variables
-    private String patientID;
-    private String patientName;
-    private int age;
-    private String roomNumber;
+    private String productCode;
+    private String productName;
+    private int quantity;
+    private double unitPrice;
 
     // Parameterized constructor
-    public Patient(String patientID, String patientName, int age, String roomNumber) {
-        this.patientID = patientID;
-        this.patientName = patientName;
-        this.age = age;
-        this.roomNumber = roomNumber;
+    public Product(String productCode, String productName, int quantity, double unitPrice) {
+        this.productCode = productCode;
+        this.productName = productName;
+        this.quantity = quantity;
+        this.unitPrice = unitPrice;
     }
 
     // Display method
     public void display() {
-        System.out.println("Patient ID: " + patientID);
-        System.out.println("Patient Name: " + patientName);
-        System.out.println("Age: " + age);
-        System.out.println("Room Number: " + roomNumber);
+        System.out.println("Product Code: " + productCode);
+        System.out.println("Product Name: " + productName);
+        System.out.println("Quantity: " + quantity);
+        System.out.println("Unit Price: ₱" + unitPrice);
         System.out.println("----------------------------");
     }
 
     // Main method
     public static void main(String[] args) {
 
-        // Create 4 Patient objects
-        Patient patient1 = new Patient("PT001", "Juan Dela Cruz", 35, "101A");
-        Patient patient2 = new Patient("PT002", "Maria Santos", 28, "102B");
-        Patient patient3 = new Patient("PT003", "Jose Reyes", 50, "103C");
-        Patient patient4 = new Patient("PT004", "Ana Garcia", 42, "104D");
+        // Create 6 Product objects
+        Product product1 = new Product("P001", "T-Shirt", 10, 350.00);
+        Product product2 = new Product("P002", "Running Shoes", 5, 1500.00);
+        Product product3 = new Product("P003", "Backpack", 8, 850.00);
+        Product product4 = new Product("P004", "Water Bottle", 15, 250.00);
+        Product product5 = new Product("P005", "Umbrella", 12, 300.00);
+        Product product6 = new Product("P006", "Wrist Watch", 6, 1200.00);
 
         // Call display method for each object
-        patient1.display();
-        patient2.display();
-        patient3.display();
-        patient4.display();
+        product1.display();
+        product2.display();
+        product3.display();
+        product4.display();
+        product5.display();
+        product6.display();
     }
