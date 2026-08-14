@@ -1,0 +1,40 @@
+public class Patient {
+
+    // Instance variables
+    private String patientID;
+    private String patientName;
+    private int age;
+    private String roomNumber;
+
+    // Parameterized constructor
+    public Patient(String patientID, String patientName, int age, String roomNumber) {
+        this.patientID = patientID;
+        this.patientName = patientName;
+        this.age = age;
+        this.roomNumber = roomNumber;
+    }
+
+    // Display method
+    public void display() {
+        System.out.println("Patient ID: " + patientID);
+        System.out.println("Patient Name: " + patientName);
+        System.out.println("Age: " + age);
+        System.out.println("Room Number: " + roomNumber);
+        System.out.println("----------------------------");
+    }
+
+    // Main method
+    public static void main(String[] args) {
+
+        // Create 4 Patient objects
+        Patient patient1 = new Patient("PT001", "Juan Dela Cruz", 35, "101A");
+        Patient patient2 = new Patient("PT002", "Maria Santos", 28, "102B");
+        Patient patient3 = new Patient("PT003", "Jose Reyes", 50, "103C");
+        Patient patient4 = new Patient("PT004", "Ana Garcia", 42, "104D");
+
+        // Call display method for each object
+        patient1.display();
+        patient2.display();
+        patient3.display();
+        patient4.display();
+    }
